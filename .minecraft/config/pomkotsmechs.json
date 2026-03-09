@@ -1,0 +1,8 @@
+{
+  "enableEntityBlockDestruction": false,
+  "enablePlayerVehicleBlockDestruction": true,
+  "nonDestructiveBlocks": "minecraft:bedrock,minecraft:structure_void,minecraft:structure_block",
+  "enableHudHealthBar": true,
+  "consumeBlocksWhenPlacing": true,
+  "dropItemsWhenDestroyBlock": false
+}

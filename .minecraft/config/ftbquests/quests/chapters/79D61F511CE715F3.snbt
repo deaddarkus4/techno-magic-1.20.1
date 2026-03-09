@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "79D61F511CE715F3"
+	group: ""
+	icon: "minecraft:piglin_head"
+	id: "79D61F511CE715F3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "4AC532263B1F6390"
+		invisible: true
+		tasks: [{
+			dimension: "minecraft:the_nether"
+			icon: "minecraft:piglin_head"
+			id: "5557FAA922D45A2B"
+			title: "Посетите Нижний Мир"
+			type: "dimension"
+		}]
+		title: "Посети Нижний Мир"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Нижний Мир"
+}

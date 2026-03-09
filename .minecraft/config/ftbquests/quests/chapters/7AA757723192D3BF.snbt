@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7AA757723192D3BF"
+	group: ""
+	id: "7AA757723192D3BF"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		description: ["Как ты сюда попал? Ладно, не важно. У тебя ведь есть способ выбраться? Ведь есть?..."]
+		id: "3471D6739C4D74D3"
+		invisible: true
+		tasks: [{
+			dimension: "ae2:spatial_storage"
+			icon: "ae2:spatial_cell_component_2"
+			id: "33DC917026D00252"
+			title: "Попадите на флешку"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Цифровой мир?"
+}

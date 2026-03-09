@@ -1,0 +1,282 @@
+{
+	autofocus_id: "561B2BE412E39D93"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1ABC6D2F6D4C7422"
+	group: ""
+	id: "1ABC6D2F6D4C7422"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["В этой категории ты узнаешь о всех (ну, или почти всех) фичах модпака. Нажми на галочку выше чтобы продолжить."]
+			icon: "minecraft:player_head"
+			id: "561B2BE412E39D93"
+			rewards: [{
+				id: "2E6C939951EF9E6F"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "77EC950161C5EC97"
+				title: "Реалити чек"
+				type: "checkmark"
+			}]
+			title: "Начало"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["561B2BE412E39D93"]
+			description: ["Ты можешь открыть квестовый журнал на кнопку [J] (по умолчанию это так), и тебе не обязательно занимать целый 1 слот инвентаря."]
+			icon: "ftbquests:book"
+			id: "5D3EE75AE8FDB759"
+			tasks: [{
+				id: "3F8A2C92399F9B71"
+				title: "Квесты"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["561B2BE412E39D93"]
+			description: [
+				"Чтобы войти в тинкерс, тебе понадобятся 2 стола (пока что без стульев)."
+				""
+				"Сборщик деталей используется для создания трафаретов из дерева. Они могут быть использованы только для базовых материалов, таких как камень."
+				""
+				"Мастерская инженера используется для создания инструментов из деталей. Каждый инструмент требует разный набор деталей и имеет свои отличительные особенности."
+			]
+			id: "0CE7039E0703F6A3"
+			tasks: [
+				{
+					id: "195E7A122F035999"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "361FE9B1670E1B4A"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+			]
+			title: "Продвинутые инструменты?"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CE7039E0703F6A3"]
+			description: [
+				"Для выплавки тебе, собственно, потребуется плавильня. Базовый вариант подразумевает 2 блока. Не трать ресурсы и сразу делай на базе цистерны с лавой."
+				""
+				"Размести плавильню на цистерне. Сбоку поставь стол и прицепи слив так, чтобы он висел над столом."
+			]
+			id: "01AE2CDE82C49B13"
+			rewards: [{
+				id: "08CABC80AD17C686"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F3014415122F764"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "42015A05A5F5EDA3"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "1499EFE0A0DDC1FA"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "712C769C137D4C4E"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
+			title: "Первая плавильня"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0CE7039E0703F6A3"]
+			id: "0D226DC747EA467E"
+			rewards: [{
+				id: "24C86BCBC5094E69"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "380C29B2C14A036F"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					count: 65L
+					id: "478519AA5B56C9B6"
+					item: { Count: 64, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+				{
+					id: "761AD90CB278F72B"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "7EC545F7D87A1A2C"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "2AF590A371F3EFA6"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "3C8D6EB361DDC62D"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
+			title: "Плавильня побольше"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0D226DC747EA467E"
+				"01AE2CDE82C49B13"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Теперь ты можешь заниматься выплавкой. Поздравляю!"
+				""
+				"Попробуй, для начала, отлить форму для слитка. Самые дешевые формы отливаются из золота (2 слитка на форму). Для этого положи заготовку на стол и кликни правой кнопкой на слив. Убедись перед этим что жидкое золото находится в самом низу плавильни. Имей ввиду, что заготовка при этом уничтожится!"
+				""
+				"Для формы слитка подойдет как слиток, так и кирпич."
+				""
+				"Для выплавки проделай то же самое, только положи на стол форму."
+			]
+			id: "347E3D3EF5239FF4"
+			tasks: [{
+				id: "629055CB75AADA0C"
+				item: "tconstruct:ingot_cast"
+				type: "item"
+			}]
+			title: "Азы выплавки"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["347E3D3EF5239FF4"]
+			description: [
+				"Пришло время действительно создать первый инструмент!"
+				""
+				"У каждого материала есть свои свойства. Они могут меняться, если деталь основная (изголовье кирки) или вспомогательная (рукоятка)."
+				""
+				"Используй для начала железо и обожженный камень. Железо заставит собираемые ресурсы стянутся в место удара, а рукоятка из обожженного камня ускорит добычу руд."
+			]
+			icon: {
+				Count: 1
+				id: "tinkers_thinking:paxel"
+				tag: {
+					Damage: 0
+					etstlib_tool_uuid: "9fa6aff9-998c-44fb-a867-b45e639ed72d"
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:seared_stone"
+						"tconstruct:iron"
+					]
+					tic_modifiers: [
+						{
+							level: 2
+							name: "tconstruct:magnetic"
+						}
+						{
+							level: 1
+							name: "tconstruct:searing"
+						}
+						{
+							level: 1
+							name: "tconstruct:killager"
+						}
+						{
+							level: 1
+							name: "tconstruct:stripping"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:durability": 1.25f
+						"tconstruct:mining_speed": 0.8f
+					}
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:attack_damage": 6.825f
+						"tconstruct:attack_speed": 1.1f
+						"tconstruct:durability": 265.625f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:mining_speed": 5.28f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			id: "57CC7E55F6CF0657"
+			tasks: [
+				{
+					id: "270854CF90EDBE55"
+					item: {
+						Count: 1
+						id: "tconstruct:pick_head"
+						tag: {
+							Material: "tconstruct:iron"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "054350DD46A648D3"
+					item: {
+						Count: 1
+						id: "tconstruct:small_axe_head"
+						tag: {
+							Material: "tconstruct:iron"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26C283B700018C6A"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:seared_stone"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Базовый продвинутый инструмент"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Основы"
+}

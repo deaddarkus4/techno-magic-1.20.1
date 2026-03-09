@@ -1,0 +1,88 @@
+# ===== World saves =====
+.minecraft/saves/
+.minecraft/backups/
+
+# ===== Logs =====
+.minecraft/logs/
+.minecraft/crash-reports/
+
+# ===== User-specific data =====
+.minecraft/usercache.json
+.minecraft/usernamecache.json
+.minecraft/servers.dat
+.minecraft/options.txt
+.minecraft/optionsof.txt
+.minecraft/optionsshaders.txt
+
+# ===== Map & waypoints (per-user) =====
+.minecraft/xaero/
+.minecraft/XaeroWaypoints_BACKUP*/
+
+# ===== Screenshots =====
+.minecraft/screenshots/
+
+# ===== Shader packs (large files, users download separately) =====
+.minecraft/shaderpacks/
+
+# ===== Resource packs =====
+.minecraft/resourcepacks/
+.minecraft/server-resource-packs/
+.minecraft/texturepacks/
+
+# ===== Sinyth Connector cache =====
+.minecraft/mods/.connector/
+
+# ===== Local/cache data =====
+.minecraft/local/
+.minecraft/data/
+.minecraft/patchouli_data.json
+
+# ===== Mod runtime files =====
+.minecraft/oc2rnet.dll
+.minecraft/rhino.local.properties
+.minecraft/minecraftinstance.json
+
+# ===== Embeddium / Oculus fingerprints =====
+.minecraft/config/embeddium-fingerprint.json
+.minecraft/config/bstats.json
+
+# ===== Voice chat user data =====
+.minecraft/config/voicechat/username-cache.json
+.minecraft/config/voicechat/voicechat-volumes.properties
+
+# ===== Discord integration user data =====
+.minecraft/DiscordIntegration-Data/
+
+# ===== Xaero config (per-user minimap/worldmap settings) =====
+.minecraft/config/xaerominimap.txt
+.minecraft/config/xaeroworldmap.txt
+.minecraft/config/xaeropatreon.txt
+
+# ===== JEI per-world data =====
+.minecraft/config/jei/world/
+
+# ===== Blueprints (user creations) =====
+.minecraft/blueprints/
+
+# ===== Trees (Dynamic Trees cache) =====
+.minecraft/trees/
+
+# ===== Patchouli books cache =====
+.minecraft/patchouli_books/
+
+# ===== Keybinding presets (user-specific) =====
+.minecraft/keybinding presets/
+
+# ===== Instance config (MultiMC-specific) =====
+instance.cfg
+mmc-pack.json
+
+# ===== OS / IDE =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ===== Disabled mods (optional — uncomment if you want to track them) =====
+# *.disabled
